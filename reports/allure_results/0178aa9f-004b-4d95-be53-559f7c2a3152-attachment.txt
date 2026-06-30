@@ -1,0 +1,2 @@
+[32mINFO    [0m api_client:api_client.py:61 Request: GET https://jsonplaceholder.typicode.com/comments/1
+[32mINFO    [0m api_client:api_client.py:74 Response: 200 in 0.21s

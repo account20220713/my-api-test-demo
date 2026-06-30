@@ -1,0 +1,3 @@
+✅ 服务健康检查通过
+2026-06-30 17:20:54,583 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-06-30 17:20:55,264 | INFO | api_client | Response: 200 in 0.60s

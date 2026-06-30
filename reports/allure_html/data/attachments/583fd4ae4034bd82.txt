@@ -1,0 +1,2 @@
+2026-06-30 17:31:51,461 | INFO | api_client | Request: PUT https://jsonplaceholder.typicode.com/todos/1
+2026-06-30 17:31:51,890 | INFO | api_client | Response: 200 in 0.42s

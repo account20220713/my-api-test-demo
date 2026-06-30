@@ -1,0 +1,15 @@
+launch_status_failed 11
+launch_status_broken 33
+launch_status_passed 8
+launch_status_skipped 0
+launch_status_unknown 0
+launch_time_duration 32916
+launch_time_min_duration 0
+launch_time_max_duration 2071
+launch_time_sum_duration 27027
+launch_problems_🟡_客户端错误_(4xx) 11
+launch_problems_✅_通过 8
+launch_problems_❌_断言失败 11
+launch_problems_test_defects 33
+launch_retries_retries 404
+launch_retries_run 52
