@@ -1,0 +1,2 @@
+2026-06-30 20:35:50,263 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/photos
+2026-06-30 20:35:50,700 | INFO | api_client | Response: 201 in 0.44s

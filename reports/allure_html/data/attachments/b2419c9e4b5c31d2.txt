@@ -1,2 +1,0 @@
-2026-06-30 20:23:05,103 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
-2026-06-30 20:23:05,511 | INFO | api_client | Response: 201 in 0.41s

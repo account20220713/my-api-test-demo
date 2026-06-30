@@ -1,7 +1,0 @@
-{
-  "postId": 4,
-  "name": "CFBIzqhq",
-  "email": "wekhLm@example.com",
-  "body": "FoOgsZJgZBsaLRUavMxY",
-  "id": 501
-}
