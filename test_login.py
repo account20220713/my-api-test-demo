@@ -189,3 +189,4 @@ def test_using_fixture(base_url):
     """验证 fixture 提供的 URL 可用"""
     resp = requests.get(f"{base_url}/posts/1")
     assert resp.status_code == 200
+
