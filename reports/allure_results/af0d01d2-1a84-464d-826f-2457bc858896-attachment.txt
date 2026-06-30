@@ -1,0 +1,7 @@
+{
+  "title": "测试照片1",
+  "url": "https://example.com/photo1.jpg",
+  "thumbnailUrl": "https://example.com/thumb1.jpg",
+  "albumId": 1,
+  "id": 5001
+}

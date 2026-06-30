@@ -1,2 +1,0 @@
-[32mINFO    [0m api_client:api_client.py:61 Request: PUT https://jsonplaceholder.typicode.com/todos/1
-[32mINFO    [0m api_client:api_client.py:74 Response: 200 in 0.40s

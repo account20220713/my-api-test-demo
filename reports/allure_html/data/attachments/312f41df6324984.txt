@@ -1,0 +1,4 @@
+✅ Allure 环境信息已生成
+✅ 服务健康检查通过
+2026-06-30 19:45:57,868 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-06-30 19:45:59,109 | INFO | api_client | Response: 200 in 1.22s

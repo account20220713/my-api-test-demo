@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "title": "更新后的照片标题",
+  "url": "https://example.com/updated.jpg",
+  "thumbnailUrl": "https://example.com/updated_thumb.jpg",
+  "albumId": 1
+}

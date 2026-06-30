@@ -154,3 +154,69 @@
 2026-06-30 17:35:16,188 | INFO | api_client | Response: 200 in 0.31s
 2026-06-30 17:35:16,196 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/todos
 2026-06-30 17:35:16,514 | INFO | api_client | Response: 200 in 0.32s
+2026-06-30 19:45:57,868 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/posts/1/comments
+2026-06-30 19:45:59,109 | INFO | api_client | Response: 200 in 1.22s
+2026-06-30 19:45:59,116 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/comments/1
+2026-06-30 19:46:00,159 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:00,170 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:00,449 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:00,463 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:00,741 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:00,757 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:01,034 | INFO | api_client | Response: 201 in 0.27s
+2026-06-30 19:46:01,056 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:01,807 | INFO | api_client | Response: 201 in 0.75s
+2026-06-30 19:46:01,827 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:02,108 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:02,116 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/comments
+2026-06-30 19:46:03,028 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:03,040 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/comments/99999
+2026-06-30 19:46:03,255 | INFO | api_client | Response: 404 in 0.21s
+2026-06-30 19:46:03,281 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/posts
+2026-06-30 19:46:03,751 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:03,773 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/posts
+2026-06-30 19:46:04,053 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:04,061 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/posts
+2026-06-30 19:46:04,339 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:04,347 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/posts
+2026-06-30 19:46:04,629 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:04,638 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:05,837 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:05,857 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/photos/1
+2026-06-30 19:46:06,685 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:06,694 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:06,916 | INFO | api_client | Response: 200 in 0.22s
+2026-06-30 19:46:06,922 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:07,199 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:07,233 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:07,514 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:07,533 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:07,811 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:07,820 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/photos
+2026-06-30 19:46:08,101 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:08,108 | INFO | api_client | Request: PUT https://jsonplaceholder.typicode.com/photos/1
+2026-06-30 19:46:08,527 | INFO | api_client | Response: 200 in 0.42s
+2026-06-30 19:46:08,533 | INFO | api_client | Request: DELETE https://jsonplaceholder.typicode.com/photos/1
+2026-06-30 19:46:08,811 | INFO | api_client | Response: 200 in 0.28s
+2026-06-30 19:46:08,826 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/photos/99999
+2026-06-30 19:46:09,039 | INFO | api_client | Response: 404 in 0.21s
+2026-06-30 19:46:09,045 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:10,788 | INFO | api_client | Response: 200 in 1.74s
+2026-06-30 19:46:10,793 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/todos/1
+2026-06-30 19:46:11,171 | INFO | api_client | Response: 200 in 0.21s
+2026-06-30 19:46:11,184 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:11,463 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:11,481 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:11,756 | INFO | api_client | Response: 201 in 0.27s
+2026-06-30 19:46:11,766 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:12,044 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:12,056 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:12,336 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:12,352 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:12,629 | INFO | api_client | Response: 201 in 0.28s
+2026-06-30 19:46:12,636 | INFO | api_client | Request: PUT https://jsonplaceholder.typicode.com/todos/1
+2026-06-30 19:46:13,140 | INFO | api_client | Response: 200 in 0.42s
+2026-06-30 19:46:13,156 | INFO | api_client | Request: DELETE https://jsonplaceholder.typicode.com/todos/1
+2026-06-30 19:46:13,445 | INFO | api_client | Response: 200 in 0.29s
+2026-06-30 19:46:13,450 | INFO | api_client | Request: GET https://jsonplaceholder.typicode.com/todos
+2026-06-30 19:46:13,660 | INFO | api_client | Response: 200 in 0.21s

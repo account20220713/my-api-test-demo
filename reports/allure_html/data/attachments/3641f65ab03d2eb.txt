@@ -1,0 +1,7 @@
+{
+  "postId": 1,
+  "name": "测试用户",
+  "email": "invalid-email",
+  "body": "无效邮箱格式",
+  "id": 501
+}
