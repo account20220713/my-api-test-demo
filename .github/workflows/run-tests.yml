@@ -1,7 +1,7 @@
 # ============================================================
 # GitHub Actions CI/CD 配置文件
 # 触发条件：每次 push 代码到 main 分支 或 创建 Pull Request
-# 执行内容：安装依赖 → 运行接口测试 → 生成 Allure 报告
+# 执行内容：安装依赖 → 运行接口测试 → 生成 Allure 报告 → 飞书通知
 # ============================================================
 
 name: 接口自动化测试
@@ -11,7 +11,6 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  # 手动触发（可选）
   workflow_dispatch:
 
 jobs:
@@ -41,7 +40,7 @@ jobs:
           pytest testcases/ -v --alluredir=./reports/allure_results
         continue-on-error: true
 
-      # ===== 5. 复制 Allure 配置文件（使报告显示自定义分类） =====
+      # ===== 5. 复制 Allure 配置文件 =====
       - name: 复制 Allure 配置文件
         run: |
           mkdir -p ./reports/allure_results
@@ -68,7 +67,7 @@ jobs:
           path: ./reports/allure_html
           retention-days: 7
 
-      # ===== 9. 上传 Allure 原始数据（供调试） =====
+      # ===== 9. 上传 Allure 原始数据 =====
       - name: 上传 Allure 原始数据
         uses: actions/upload-artifact@v4
         with:
@@ -76,14 +75,70 @@ jobs:
           path: ./reports/allure_results
           retention-days: 3
 
-      # ===== 10. 测试结果通知（钉钉/飞书，可选） =====
-      - name: 发送通知
+      # ===== 10. 飞书测试报告通知 =====
+      - name: 飞书测试报告通知
         if: always()
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
           if [ "${{ job.status }}" == "success" ]; then
-            STATUS="✅ 测试通过"
+            STATUS="✅ 全部通过"
+            COLOR="green"
           else
-            STATUS="❌ 测试失败"
+            STATUS="❌ 存在失败"
+            COLOR="red"
           fi
-          echo "测试状态: $STATUS"
-          echo "报告下载: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+          # 构造飞书消息
+          MESSAGE=$(cat <<EOF
+          {
+            "msg_type": "interactive",
+            "card": {
+              "header": {
+                "title": {
+                  "tag": "plain_text",
+                  "content": "🧪 接口自动化测试报告"
+                },
+                "template": "${COLOR}"
+              },
+              "elements": [
+                {
+                  "tag": "div",
+                  "text": {
+                    "tag": "lark_md",
+                    "content": "**状态：${STATUS}**"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "text": {
+                    "tag": "lark_md",
+                    "content": "⏱️ 构建编号：${{ github.run_number }}"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "text": {
+                    "tag": "lark_md",
+                    "content": "📎 [查看详细报告](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                  }
+                },
+                {
+                  "tag": "hr"
+                },
+                {
+                  "tag": "note",
+                  "elements": [
+                    {
+                      "tag": "plain_text",
+                      "content": "🤖 由 GitHub Actions 自动发送"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+          EOF
+          )
+
+          curl -X POST -H "Content-Type: application/json" -d "$MESSAGE" $FEISHU_WEBHOOK
