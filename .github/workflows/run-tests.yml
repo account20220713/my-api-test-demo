@@ -39,21 +39,28 @@ jobs:
       - name: 执行接口测试
         run: |
           pytest testcases/ -v --alluredir=./reports/allure_results
-        continue-on-error: true   # 即使测试失败，也继续执行后续步骤
+        continue-on-error: true
 
-      # ===== 5. 安装 Allure 命令行工具 =====
+      # ===== 5. 复制 Allure 配置文件（使报告显示自定义分类） =====
+      - name: 复制 Allure 配置文件
+        run: |
+          mkdir -p ./reports/allure_results
+          if [ -f categories.json ]; then cp categories.json ./reports/allure_results/; fi
+          if [ -f executor.json ]; then cp executor.json ./reports/allure_results/; fi
+
+      # ===== 6. 安装 Allure 命令行工具 =====
       - name: 安装 Allure 命令行
         run: |
           curl -sL https://github.com/allure-framework/allure2/releases/download/2.29.0/allure-2.29.0.zip -o allure.zip
           unzip allure.zip -d /opt/
           echo "/opt/allure-2.29.0/bin" >> $GITHUB_PATH
 
-      # ===== 6. 生成 Allure HTML 报告 =====
+      # ===== 7. 生成 Allure HTML 报告 =====
       - name: 生成 Allure 报告
         run: |
           allure generate ./reports/allure_results -o ./reports/allure_html --clean
 
-      # ===== 7. 上传报告作为构建产物 =====
+      # ===== 8. 上传测试报告 =====
       - name: 上传测试报告
         uses: actions/upload-artifact@v4
         with:
@@ -61,10 +68,22 @@ jobs:
           path: ./reports/allure_html
           retention-days: 7
 
-      # ===== 8. 可选：上传 Allure 原始数据（供调试） =====
+      # ===== 9. 上传 Allure 原始数据（供调试） =====
       - name: 上传 Allure 原始数据
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: ./reports/allure_results
           retention-days: 3
+
+      # ===== 10. 测试结果通知（钉钉/飞书，可选） =====
+      - name: 发送通知
+        if: always()
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            STATUS="✅ 测试通过"
+          else
+            STATUS="❌ 测试失败"
+          fi
+          echo "测试状态: $STATUS"
+          echo "报告下载: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
