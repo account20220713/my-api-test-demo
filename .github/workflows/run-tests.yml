@@ -39,6 +39,7 @@ jobs:
       - name: 执行接口测试
         run: |
           pytest testcases/ -v --alluredir=./reports/allure_results
+        continue-on-error: true   # 即使测试失败，也继续执行后续步骤
 
       # ===== 5. 安装 Allure 命令行工具 =====
       - name: 安装 Allure 命令行

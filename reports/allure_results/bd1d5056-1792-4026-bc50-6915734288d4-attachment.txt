@@ -1,2 +1,0 @@
-2026-06-30 19:46:08,108 | INFO | api_client | Request: PUT https://jsonplaceholder.typicode.com/photos/1
-2026-06-30 19:46:08,527 | INFO | api_client | Response: 200 in 0.42s

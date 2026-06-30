@@ -1,0 +1,3 @@
+[32mINFO    [0m api_client:api_client.py:61 Request: GET https://jsonplaceholder.typicode.com/posts/1
+[32mINFO    [0m api_client:api_client.py:61 Request: GET https://jsonplaceholder.typicode.com/posts/1
+[32mINFO    [0m api_client:api_client.py:61 Request: GET https://jsonplaceholder.typicode.com/posts/1

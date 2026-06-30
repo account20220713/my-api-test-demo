@@ -1,0 +1,2 @@
+[32mINFO    [0m api_client:api_client.py:61 Request: POST https://jsonplaceholder.typicode.com/comments
+[32mINFO    [0m api_client:api_client.py:74 Response: 201 in 0.45s

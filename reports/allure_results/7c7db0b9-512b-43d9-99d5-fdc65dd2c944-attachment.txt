@@ -1,0 +1,2 @@
+2026-06-30 20:23:07,511 | INFO | api_client | Request: DELETE https://jsonplaceholder.typicode.com/todos/1
+2026-06-30 20:23:07,915 | INFO | api_client | Response: 200 in 0.40s

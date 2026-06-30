@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"9f0cd7c65898e91b0ca55428a158187e","name":"接口自动化测试框架","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}}]}
+{"total":2,"items":[{"uid":"5ed4b4976e25e1642cda2ff61266a9d0","name":"演示用例","statistic":{"failed":1,"broken":0,"skipped":1,"passed":5,"unknown":0,"total":7}},{"uid":"9f0cd7c65898e91b0ca55428a158187e","name":"接口自动化测试框架","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}}]}
