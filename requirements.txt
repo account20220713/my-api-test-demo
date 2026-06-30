@@ -5,3 +5,4 @@ allure-pytest==2.13.2
 Faker==20.0.0
 tenacity==8.0.0
 jsonschema==4.20.0
+pytest-html==4.1.0
