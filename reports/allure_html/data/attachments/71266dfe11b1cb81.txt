@@ -1,2 +1,0 @@
-2026-06-30 20:35:36,917 | INFO | api_client | Request: POST https://jsonplaceholder.typicode.com/comments
-2026-06-30 20:35:37,843 | INFO | api_client | Response: 201 in 0.92s
