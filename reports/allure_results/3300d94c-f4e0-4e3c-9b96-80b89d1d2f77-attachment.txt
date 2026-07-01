@@ -1,7 +1,0 @@
-{
-  "title": "测试照片2",
-  "url": "",
-  "thumbnailUrl": "",
-  "albumId": 1,
-  "id": 5001
-}

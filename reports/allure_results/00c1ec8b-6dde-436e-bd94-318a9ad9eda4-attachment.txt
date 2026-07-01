@@ -1,7 +1,0 @@
-{
-  "postId": 1,
-  "name": "测试用户",
-  "email": "test@example.com",
-  "body": "这是一条测试评论",
-  "id": 501
-}
