@@ -1,0 +1,4 @@
+[32mINFO    [0m ui_test:ui_base.py:46 导航到: https://www.saucedemo.com/
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: #user-name -> 'standard_user'
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: #password -> 'wrong'
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: #login-button

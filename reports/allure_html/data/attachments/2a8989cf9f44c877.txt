@@ -1,0 +1,4 @@
+[32mINFO    [0m ui_test:conftest.py:199 📄 创建独立页面（已登录）: test_fail_wrong_assertion_chromium
+[32mINFO    [0m ui_test:conftest.py:81 📸 最终截图已保存: reports\screenshots\2026-07-01\test_fail_wrong_assertion_chromium_失败\99_最终状态_20260701_193442.png
+[32mINFO    [0m ui_test:conftest.py:100 🎬 录屏已保存: reports\videos\2026-07-01\test_fail_wrong_assertion_chromium_失败_20260701_193443.webm
+[32mINFO    [0m ui_test:conftest.py:230 ✅ 测试完成: test_fail_wrong_assertion_chromium, 状态: 失败

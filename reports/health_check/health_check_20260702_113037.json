@@ -1,0 +1,26 @@
+[
+  {
+    "name": "INZ 在线服务门户",
+    "url": "https://onlineservices.immigration.govt.nz/",
+    "healthy": false,
+    "status_code": null,
+    "response_time": null,
+    "error": "所有重试均失败"
+  },
+  {
+    "name": "INZ 打工度假签证",
+    "url": "https://onlineservices.immigration.govt.nz/WorkingHoliday/",
+    "healthy": false,
+    "status_code": null,
+    "response_time": null,
+    "error": "所有重试均失败"
+  },
+  {
+    "name": "INZ 付款页面",
+    "url": "https://onlineservices.immigration.govt.nz/PaymentGateway/OnLinePayment.aspx?SourceUrl=//onlineservices.immigration.govt.nz/WorkingHoliday/Application/SubmitConfirmation.aspx?ApplicationId=3950366&ProductId=2&Token=LctQ9Y5g+5WanrJmA6S2WZ1Wh+x0uJrShXkeXYFpMHIInIjP2w8fOC6w+Dx3Yt0q9a9wXceWv0I=",
+    "healthy": false,
+    "status_code": null,
+    "response_time": null,
+    "error": "所有重试均失败"
+  }
+]

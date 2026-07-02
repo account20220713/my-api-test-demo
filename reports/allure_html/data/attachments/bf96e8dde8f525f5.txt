@@ -1,0 +1,12 @@
+[32mINFO    [0m ui_test:conftest.py:199 📄 创建独立页面（已登录）: test_full_checkout_flow_chromium
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: [data-test='add-to-cart-sauce-labs-backpack']
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: .shopping_cart_link
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: [data-test='checkout']
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: [data-test='firstName'] -> 'Test'
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: [data-test='lastName'] -> 'User'
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: [data-test='postalCode'] -> '12345'
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: [data-test='continue']
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: [data-test='finish']
+[32mINFO    [0m ui_test:conftest.py:81 📸 最终截图已保存: reports\screenshots\2026-07-01\test_full_checkout_flow_chromium_成功\99_最终状态_20260701_193249.png
+[32mINFO    [0m ui_test:conftest.py:100 🎬 录屏已保存: reports\videos\2026-07-01\test_full_checkout_flow_chromium_成功_20260701_193250.webm
+[32mINFO    [0m ui_test:conftest.py:230 ✅ 测试完成: test_full_checkout_flow_chromium, 状态: 成功

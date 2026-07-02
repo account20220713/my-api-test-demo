@@ -1,0 +1,45 @@
+# ============================================================
+# 新西兰移民局网站健康检查（定时任务）
+# 每天 8:00、14:00、20:00 自动检查三个网站
+# ============================================================
+
+name: 新西兰移民局网站健康检查
+
+on:
+  schedule:
+    # ⭐ 每 5 分钟执行一次（GitHub 支持的最短间隔）
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    # ... 其余保持不变
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: 执行健康检查
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          python health_check_inz.py
+
+      - name: 上传检查报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: health-check-reports-${{ github.run_id }}
+          path: reports/health_check/
+          retention-days: 30

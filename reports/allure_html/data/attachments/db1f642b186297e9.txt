@@ -1,0 +1,9 @@
+[32mINFO    [0m ui_test:conftest.py:119 检测到 2 块屏幕
+[32mINFO    [0m ui_test:conftest.py:126 ✅ 第二块屏幕: 1920x1080 位置: (5, -1080)
+[32mINFO    [0m ui_test:conftest.py:164 🔐 执行登录（仅一次）...
+[32mINFO    [0m ui_test:conftest.py:173 ✅ Cookies 已保存，共 1 条
+[32mINFO    [0m ui_test:conftest.py:199 📄 创建独立页面（已登录）: test_add_item_to_cart_chromium
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: [data-test='add-to-cart-sauce-labs-backpack']
+[32mINFO    [0m ui_test:conftest.py:81 📸 最终截图已保存: reports\screenshots\2026-07-01\test_add_item_to_cart_chromium_成功\99_最终状态_20260701_193146.png
+[32mINFO    [0m ui_test:conftest.py:100 🎬 录屏已保存: reports\videos\2026-07-01\test_add_item_to_cart_chromium_成功_20260701_193147.webm
+[32mINFO    [0m ui_test:conftest.py:230 ✅ 测试完成: test_add_item_to_cart_chromium, 状态: 成功

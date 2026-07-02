@@ -1,0 +1,29 @@
+[
+  {
+    "name": "百度",
+    "url": "https://www.baidu.com/",
+    "healthy": true,
+    "status_code": 200,
+    "response_time": 0.81,
+    "error": null,
+    "attempt": 1
+  },
+  {
+    "name": "4399游戏",
+    "url": "https://www.4399.com/",
+    "healthy": true,
+    "status_code": 200,
+    "response_time": 0.71,
+    "error": null,
+    "attempt": 1
+  },
+  {
+    "name": "苹果官网",
+    "url": "https://www.apple.com/",
+    "healthy": true,
+    "status_code": 200,
+    "response_time": 0.86,
+    "error": null,
+    "attempt": 1
+  }
+]

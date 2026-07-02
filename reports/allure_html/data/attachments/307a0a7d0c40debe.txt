@@ -1,0 +1,5 @@
+[32mINFO    [0m ui_test:ui_base.py:46 导航到: https://www.saucedemo.com/
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: #user-name -> 'standard_user'
+[32mINFO    [0m ui_test:ui_base.py:77 输入文本: #password -> 'secret_sauce'
+[32mINFO    [0m ui_test:ui_base.py:67 点击元素: #login-button
+[32mINFO    [0m ui_test:test_login.py:59 ✅ 测试通过：标准用户登录成功
